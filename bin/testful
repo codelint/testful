@@ -1,0 +1,10 @@
+#! /usr/bin/env node
+
+try{
+  var testful = require('testful');
+}catch(e){
+  var testful = require('./lib');
+}
+var client = testful.client;
+client.testful.main(process.argv, process.argv.length);
+

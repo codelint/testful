@@ -1,0 +1,6 @@
+{
+  "host": "localhost",
+  "port": 5555,
+  "timeout": 500,
+  "encoding": "utf8"
+}
