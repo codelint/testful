@@ -69,7 +69,9 @@ You just give the case data like below:
  *  },
  *  // ------- test server's context ------------ //
  *  context: {
- *      server: nodejs-server,  //give the server, tester will start server auto; if not give, you must confirm the host:port you give is startup
+ *      //if give the server, tester will start server auto;
+ *      //if not give, you must confirm the host:port you give is startup
+ *      server: nodejs-server,
  *      host: 'localhost',
  *      port: 5555,
  *      timeout: 500,
@@ -78,11 +80,12 @@ You just give the case data like below:
  *  init : function(cases, next),
  *  close : function(cases, next)
  */
+ file(_./sample/get_post_timeout.js_) is a sample
 ````
 
 
 contact author
 ===========
 ````
-email: codelint@foxmail.com
+email: [codelint@foxmail.com]
 ````
