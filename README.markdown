@@ -32,8 +32,8 @@ You just give the case data like below:
 
 ./sample/get_post_timeout.js:
 
-````
 ```javascript
+// file[./sample/get_post_timeout.js] is a sample
 // ---------------------------- test cases defines --------------------------- //
  //input & expect is require
 var Cases = {
@@ -81,8 +81,6 @@ var context = {
 // init : function(cases, next),
 // close : function(cases, next)
 ```
- file[./sample/get_post_timeout.js] is a sample
-````
 
 
 contact author
