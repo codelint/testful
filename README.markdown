@@ -33,7 +33,51 @@ You just give the case data like below:
 ./sample/get_post_timeout.js:
 
 ````
-  //todo write somthing here
+// ---------------------------- test cases defines --------------------------- //
+/*  //input & expect is require
+ *  cases: {
+ *      "test1 title": case,
+ *      "test2 title": case,
+ *      ...
+ *  }
+ *  case: {
+ *      result: true / false        //after test will fill by tester
+ *      input:{
+ *          host: "localhost",      //optional
+ *          port: 5555,             //optional
+ *          method: "POST"/"GET",
+ *          headers:{},
+ *          path:"/url/to/call/api?param1=1&param2=2"
+ *          body:{}                 //for post
+ *      },
+ *      expect:{
+ *          statusCode: 200,
+ *          headers:{},
+ *          body:{}
+ *      },
+ *      actual: {                   //after test will fill by tester
+ *          statusCode: 200,
+ *          headers: {},
+ *          body: {}
+ *      },
+ *      error: {                    //if error occur during testing, tester will fill this field
+ *      }
+ *      before: Function(title, case, next),          //optional
+ *      after: Function(title, case, next),           //optional
+ *      setup: Function(title, case, next),           //optional
+ *      teardown: Function(title, case, next)         //optional
+ *  },
+ *  // ------- test server's context ------------ //
+ *  context: {
+ *      server: nodejs-server,  //give the server, tester will start server auto; if not give, you must confirm the host:port you give is startup
+ *      host: 'localhost',
+ *      port: 5555,
+ *      timeout: 500,
+ *      encoding: 'utf8'
+ *  },
+ *  init : function(cases, next),
+ *  close : function(cases, next)
+ */
 ````
 
 
