@@ -11,6 +11,7 @@ installation
 ============
 
 With [npm](http://github.com/isaacs/npm), just do:
+
     npm install -g testful
 
 or clone this project on github:
