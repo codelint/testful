@@ -80,12 +80,12 @@ You just give the case data like below:
  *  init : function(cases, next),
  *  close : function(cases, next)
  */
- file(_./sample/get_post_timeout.js_) is a sample
+ file(*./sample/get_post_timeout.js*) is a sample
 ````
 
 
 contact author
 ===========
 ````
-email: [codelint@foxmail.com]
+email: [codelint@foxmail.com][codelint@foxmail.com]
 ````
