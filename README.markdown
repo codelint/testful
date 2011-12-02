@@ -63,10 +63,10 @@ var Case = {
   },
   error: {                    //if error occur during testing, tester will fill this field
   }
-  before: Function(title, case, next),          //optional
-  after: Function(title, case, next),           //optional
-  setup: Function(title, case, next),           //optional
-  teardown: Function(title, case, next)         //optional
+  before: Function(next, title, case),          //optional
+  after: Function(next, title, case),           //optional
+  setup: Function(next, title, case),           //optional
+  teardown: Function(next, title, case)         //optional
 }
 // ------- test server's context ------------ //
 var context = {
