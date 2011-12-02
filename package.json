@@ -2,9 +2,9 @@
   "author": "inotseeyou <inotseeyou@gmail.com> (http://inotseeyou.com)",
   "name": "testful",
   "description": "test framework for restful service, just http test",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "repository": {
-    "url": ""
+    "url": "https://github.com/codelint/testful.git"
   },
   "licence":"MIT",
   "main": "./lib/index.js",
