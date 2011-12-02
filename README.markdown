@@ -78,8 +78,8 @@ var context = {
   timeout: 500,
   encoding: 'utf8'
 }
-// init : function(cases, next),
-// close : function(cases, next)
+// init : function(next, cases),
+// close : function(next, cases)
 ```
 
 
