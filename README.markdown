@@ -62,7 +62,7 @@ var Cases = {
     setup: Function(next, title, case),           //optional
     teardown: Function(next, title, case)         //optional
   },
-  "test2 title: { ... }
+  "test2 title": { ... }
 }
 
 // file[./sample/server.context.json] is a sample
