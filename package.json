@@ -2,7 +2,7 @@
   "author": "inotseeyou <inotseeyou@gmail.com> (http://inotseeyou.com)",
   "name": "testful",
   "description": "test framework for restful service, just http test",
-  "version": "1.0.1459",
+  "version": "1.0.1461",
   "repository": {
     "url": "https://github.com/codelint/testful.git"
   },
