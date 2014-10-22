@@ -1,0 +1,35 @@
+#! /bin/bash
+
+SELF=$(readlink -f $0)
+DIR=$(dirname $SELF)
+
+WORKSPACE=${WORKSPACE:="$DIR/.."}
+SVN_REVISION=${SVN_REVISION:=0}
+if [[ $SVN_REVISION -eq 0 ]];then
+    read -p "SVN_REVISION:" SVN_REVISION
+else
+    echo "SVN_REVISION: $SVN_REVISION"
+fi
+VERSION_FILE=$WORKSPACE/package.json
+# sed -i.org -e 's@\("version":[ \t]*\)"\([^\.]*\)\."@\1"\2.'$SVN_REVISION'"@' "$VERSION_FILE"
+sed -i.org -e 's@\("version":[ \t]*\)"\([^\.]\)\.\([^\.]\)\..*"@\1"\2.\3.'$SVN_REVISION'"@' "$VERSION_FILE"
+
+# start to publish to npm repository
+npm publish $WORKSPACE
+ret=$?
+
+# cat_ret=0
+# if [[ -f $VERSION_FILE ]]; then
+#   cat $VERSION_FILE.org > $VERSION_FILE
+#   cat_ret=$?
+# fi
+
+# if [[ $cat_ret -gt 0 ]];then
+#     exit $cat_ret
+# fi
+
+if [[ $ret -gt 0 ]];then
+    exit $ret
+fi
+
+
