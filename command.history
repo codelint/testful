@@ -1,0 +1,5 @@
+#! /bin/bash
+
+./bin/testful -d ./sample -f ./sample/server.context.js
+
+git push -u origin master

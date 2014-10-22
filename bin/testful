@@ -1,9 +1,11 @@
 #! /usr/bin/env node
 
 try{
-  var testful = require('testful');
+  var testful = require('../lib');
+  console.log('import lib from "../lib"');
 }catch(e){
-  var testful = require('./lib');
+  console.log(e);
+  var testful = require('testful');
 }
 var client = testful.client;
 client.testful.main(process.argv, process.argv.length);

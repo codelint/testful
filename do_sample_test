@@ -1,3 +1,4 @@
 #! /bin/bash
-
-./bin/testful ./lib/client/testful.js -d ./sample -f ./sample/server.context.js
+#
+# ./bin/testful ./lib/client/testful.js -d ./sample -f ./sample/server.context.js
+./bin/testful -d ./sample -f ./sample/server.context.js

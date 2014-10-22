@@ -1,4 +1,3 @@
-node_modules
+.git 
 .svn
-.idea
-*.iml
+node_modules
