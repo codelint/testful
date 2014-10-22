@@ -30,44 +30,42 @@ examples
 You just give the case data like below:
 -------------------------------------------------------------------
 
-./sample/get_post_timeout.js:
-
 ```javascript
 // file[./sample/get_post_timeout.js] is a sample
 // ---------------------------- test cases defines --------------------------- //
- //input & expect is require
+//input & expect is require
 var Cases = {
-  "test1 title": Case,
-  "test2 title": Case,
-  ...
-}
-var Case = {
-  result: true / false        //after test will fill by tester
-  input:{
+  "test1 title": {
+    result: true / false        //after test will fill by tester
+    input:{
       host: "localhost",      //optional
       port: 5555,             //optional
       method: "POST"/"GET",
       headers:{},
       path:"/url/to/call/api?param1=1&param2=2"
       body:{}                 //for post
-  },
-  expect:{
+    },
+    expect:{
       statusCode: 200,
       headers:{},
       body:{}
-  },
-  actual: {                   //after test will fill by tester
+    },
+    actual: {                   //after test will fill by tester
       statusCode: 200,
       headers: {},
       body: {}
+    },
+    error: {                    //if error occur during testing, tester will fill this field
+    }
+    before: Function(next, title, case),          //optional
+    after: Function(next, title, case),           //optional
+    setup: Function(next, title, case),           //optional
+    teardown: Function(next, title, case)         //optional
   },
-  error: {                    //if error occur during testing, tester will fill this field
-  }
-  before: Function(next, title, case),          //optional
-  after: Function(next, title, case),           //optional
-  setup: Function(next, title, case),           //optional
-  teardown: Function(next, title, case)         //optional
+  "test2 title: { ... }
 }
+
+// file[./sample/server.context.json] is a sample
 // ------- test server's context ------------ //
 var context = {
   //if give the server, tester will start server auto;
@@ -86,5 +84,6 @@ var context = {
 contact author
 ===========
 ````
+nick: DGMan
 email: codelint@foxmail.com
 ````
