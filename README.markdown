@@ -1,4 +1,4 @@
-optimist
+Testful
 ========
 
 testful is a node.js test framework for restful service test.
