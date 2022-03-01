@@ -14,8 +14,8 @@
   },
   "dependencies": {
     "lang": ">= 0.1.13",
-    "colors": ">= 0.5.1",
-    "findit": "= 0.1.2",
+    "colors": ">= 1.4.0",
+    "findit": "= 2.0.0",
     "optimist": "~0.6.1"
   },
   "devDependencies": {
