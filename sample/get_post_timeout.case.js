@@ -11,6 +11,8 @@
 
 module.exports = {
     "test get": {
+        cookie: 1, 
+        sort: 0,
         input: {
             method: "GET",
             path:"/api/for/test/get",
@@ -50,6 +52,8 @@ module.exports = {
         }
     },
     "test post": {
+        cookie: 1,
+        sort: 0,
         input: {
             method: "POST",
             path:"/api/for/test/post",
@@ -73,6 +77,8 @@ module.exports = {
         errorMessage: "api for test get"
     },
     "test timeout": {
+        cookie: 1,
+        sort: 0,
         input: {
             method: "GET",
             path: "/api/for/test/timeout"
