@@ -13,7 +13,6 @@
     "node": ">=0.5.10"
   },
   "dependencies": {
-    "colors": ">= 1.4.0",
     "findit": "= 2.0.0",
     "optimist": "^0.5.2"
   },
