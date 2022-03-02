@@ -36,7 +36,7 @@ module.exports = {
             console.log("[i-setup]: function defined in context".grey);
             next();
         },
-            teardown: function(next, title, cs) {
+        teardown: function(next, title, cs) {
             console.log("[i-teardown]: function defined in context".grey);
             next();
         },

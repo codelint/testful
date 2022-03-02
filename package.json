@@ -2,7 +2,7 @@
   "author": "inotseeyou <inotseeyou@gmail.com> (http://inotseeyou.com)",
   "name": "testful",
   "description": "test framework for restful service, just http test",
-  "version": "1.0.1222",
+  "version": "1.1.1222",
   "bin": "./bin/testful",
   "repository": {
     "url": "https://github.com/codelint/testful.git"
@@ -10,7 +10,7 @@
   "licence": "MIT",
   "main": "./lib/index.js",
   "engines": {
-    "node": ">=0.5.10"
+    "node": ">=12.16.3"
   },
   "dependencies": {
     "findit": "= 2.0.0",
