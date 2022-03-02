@@ -6,7 +6,8 @@
  * To change this template use File | Settings | File Templates.
  */
 
-require('colors');
+// require('colors');
+
 
 module.exports = {
     "test get": {
