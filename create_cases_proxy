@@ -1,0 +1,2 @@
+#! env node
+require('./lib/CaseGenerator')(5566, '/root/src/testful/cases');
